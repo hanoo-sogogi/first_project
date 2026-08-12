@@ -1,0 +1,436 @@
+{
+  "merge_sources": [
+    "HI-Medium",
+    "LI-Medium"
+  ],
+  "features": [
+    "LogAmountUSD",
+    "PaymentFormat",
+    "IsSelfLoop",
+    "IsSameBank",
+    "Hour",
+    "DayOfWeek",
+    "FromIsNew",
+    "ToIsNew",
+    "FromCountry",
+    "ToCountry",
+    "IsCrossBorderBank",
+    "pair_prior_count"
+  ],
+  "results": [
+    {
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 1,
+      "calib_threshold": 0.7151182889938354,
+      "calib_set_f1": 0.45848038197998764,
+      "default": {
+        "model": "HI-Medium_xgb_s1_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.5248787092406634,
+        "precision": 0.4375744654166928,
+        "recall": 0.6557038150723549,
+        "pr_auc": 0.578691712797519
+      },
+      "calibrated": {
+        "model": "HI-Medium_xgb_s1_thrCAL",
+        "threshold": 0.7151182889938354,
+        "f1": 0.5768655561858594,
+        "precision": 0.6392730597782603,
+        "recall": 0.5255591054313099,
+        "pr_auc": 0.578691712797519
+      }
+    },
+    {
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 1,
+      "calib_threshold": 0.6726985461190041,
+      "calib_set_f1": 0.4515063970279793,
+      "default": {
+        "model": "HI-Medium_lgb_s1_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.5573156330170623,
+        "precision": 0.4917714696370823,
+        "recall": 0.6430182296560797,
+        "pr_auc": 0.5818871085514116
+      },
+      "calibrated": {
+        "model": "HI-Medium_lgb_s1_thrCAL",
+        "threshold": 0.6726985461190041,
+        "f1": 0.5790823000052321,
+        "precision": 0.6532876874040845,
+        "recall": 0.5200150347679008,
+        "pr_auc": 0.5818871085514116
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 1,
+      "calib_threshold": 0.8988065123558044,
+      "calib_set_f1": 0.16004374772109903,
+      "default": {
+        "model": "LI-Medium_xgb_s1_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.202390324196665,
+        "precision": 0.13876349362119725,
+        "recall": 0.3737774253238171,
+        "pr_auc": 0.23557991870072525
+      },
+      "calibrated": {
+        "model": "LI-Medium_xgb_s1_thrCAL",
+        "threshold": 0.8988065123558044,
+        "f1": 0.28811131573562515,
+        "precision": 0.6376811594202898,
+        "recall": 0.18609569125033043,
+        "pr_auc": 0.23557991870072525
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 1,
+      "calib_threshold": 0.7375752755359241,
+      "calib_set_f1": 0.15551858014370779,
+      "default": {
+        "model": "LI-Medium_lgb_s1_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.23226785864889937,
+        "precision": 0.17054743621501114,
+        "recall": 0.36399682791435367,
+        "pr_auc": 0.2361258886869298
+      },
+      "calibrated": {
+        "model": "LI-Medium_lgb_s1_thrCAL",
+        "threshold": 0.7375752755359241,
+        "f1": 0.29133392487429755,
+        "precision": 0.3306478684122189,
+        "recall": 0.260375363468147,
+        "pr_auc": 0.2361258886869298
+      }
+    },
+    {
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 1,
+      "calib_threshold": 0.8838523030281067,
+      "calib_set_f1": 0.3391877058173003,
+      "default": {
+        "model": "HI-Small_xgb_s1_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.3644010767160161,
+        "precision": 0.26121562952243127,
+        "recall": 0.6023359288097887,
+        "pr_auc": 0.41923397136293844
+      },
+      "calibrated": {
+        "model": "HI-Small_xgb_s1_thrCAL",
+        "threshold": 0.8838523030281067,
+        "f1": 0.4222137694941042,
+        "precision": 0.6678700361010831,
+        "recall": 0.3086763070077864,
+        "pr_auc": 0.41923397136293844
+      }
+    },
+    {
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 1,
+      "calib_threshold": 0.7810767342979364,
+      "calib_set_f1": 0.38105046343925936,
+      "default": {
+        "model": "HI-Small_lgb_s1_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.4012608937511589,
+        "precision": 0.30097357440890127,
+        "recall": 0.6017797552836485,
+        "pr_auc": 0.4326142798445625
+      },
+      "calibrated": {
+        "model": "HI-Small_lgb_s1_thrCAL",
+        "threshold": 0.7810767342979364,
+        "f1": 0.4415315626077958,
+        "precision": 0.5812897366030881,
+        "recall": 0.3559510567296997,
+        "pr_auc": 0.4326142798445625
+      }
+    },
+    {
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 2,
+      "calib_threshold": 0.43369439244270325,
+      "calib_set_f1": 0.27101183190484773,
+      "default": {
+        "model": "HI-Medium_xgb_s2_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.31086318261890783,
+        "precision": 0.41437069505322477,
+        "recall": 0.24873144145837248,
+        "pr_auc": 0.20101855387127163
+      },
+      "calibrated": {
+        "model": "HI-Medium_xgb_s2_thrCAL",
+        "threshold": 0.43369439244270325,
+        "f1": 0.33546128500823724,
+        "precision": 0.3709861079480756,
+        "recall": 0.30614546137943993,
+        "pr_auc": 0.20101855387127163
+      }
+    },
+    {
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 2,
+      "calib_threshold": 0.7544375914530035,
+      "calib_set_f1": 0.4552125931315375,
+      "default": {
+        "model": "HI-Medium_lgb_s2_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.533041476393554,
+        "precision": 0.44541154210028383,
+        "recall": 0.6635970682202593,
+        "pr_auc": 0.5907307285085582
+      },
+      "calibrated": {
+        "model": "HI-Medium_lgb_s2_thrCAL",
+        "threshold": 0.7544375914530035,
+        "f1": 0.5715703025960426,
+        "precision": 0.6912411678442875,
+        "recall": 0.48722044728434505,
+        "pr_auc": 0.5907307285085582
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 2,
+      "calib_threshold": 0.46222707629203796,
+      "calib_set_f1": 0.09376329447755023,
+      "default": {
+        "model": "LI-Medium_xgb_s2_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.13158230269029708,
+        "precision": 0.1270935960591133,
+        "recall": 0.13639968279143536,
+        "pr_auc": 0.03695633727946712
+      },
+      "calibrated": {
+        "model": "LI-Medium_xgb_s2_thrCAL",
+        "threshold": 0.46222707629203796,
+        "f1": 0.1337891737891738,
+        "precision": 0.11758814102564102,
+        "recall": 0.15516785619878404,
+        "pr_auc": 0.03695633727946712
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 2,
+      "calib_threshold": 0.8945011949636192,
+      "calib_set_f1": 0.1609462866004158,
+      "default": {
+        "model": "LI-Medium_lgb_s2_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.20852803738317757,
+        "precision": 0.1440532633915061,
+        "recall": 0.3774781919111816,
+        "pr_auc": 0.2480251155559238
+      },
+      "calibrated": {
+        "model": "LI-Medium_lgb_s2_thrCAL",
+        "threshold": 0.8945011949636192,
+        "f1": 0.2934232715008432,
+        "precision": 0.7242455775234131,
+        "recall": 0.18398096748612214,
+        "pr_auc": 0.2480251155559238
+      }
+    },
+    {
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 2,
+      "calib_threshold": 0.5824509263038635,
+      "calib_set_f1": 0.12198795180674607,
+      "default": {
+        "model": "HI-Small_xgb_s2_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.17442482611021937,
+        "precision": 0.16804123711340208,
+        "recall": 0.18131256952169078,
+        "pr_auc": 0.06240968774329779
+      },
+      "calibrated": {
+        "model": "HI-Small_xgb_s2_thrCAL",
+        "threshold": 0.5824509263038635,
+        "f1": 0.14958625079567156,
+        "precision": 0.17485119047619047,
+        "recall": 0.13070077864293658,
+        "pr_auc": 0.06240968774329779
+      }
+    },
+    {
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 2,
+      "calib_threshold": 0.767857127105039,
+      "calib_set_f1": 0.3923444976071561,
+      "default": {
+        "model": "HI-Small_lgb_s2_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.37053123955897094,
+        "precision": 0.26480420248328557,
+        "recall": 0.6167964404894327,
+        "pr_auc": 0.4515196147940357
+      },
+      "calibrated": {
+        "model": "HI-Small_lgb_s2_thrCAL",
+        "threshold": 0.767857127105039,
+        "f1": 0.46809874959923053,
+        "precision": 0.5526116578349735,
+        "recall": 0.40600667408231367,
+        "pr_auc": 0.4515196147940357
+      }
+    },
+    {
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 3,
+      "calib_threshold": 0.7353121638298035,
+      "calib_set_f1": 0.45377680721155006,
+      "default": {
+        "model": "HI-Medium_xgb_s3_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.5435004314740723,
+        "precision": 0.4664691624023701,
+        "recall": 0.6510054501033641,
+        "pr_auc": 0.5824553734703038
+      },
+      "calibrated": {
+        "model": "HI-Medium_xgb_s3_thrCAL",
+        "threshold": 0.7353121638298035,
+        "f1": 0.5635712735951399,
+        "precision": 0.6665383628432128,
+        "recall": 0.4881601202781432,
+        "pr_auc": 0.5824553734703038
+      }
+    },
+    {
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 3,
+      "calib_threshold": 0.7365401357082496,
+      "calib_set_f1": 0.45913283154831874,
+      "default": {
+        "model": "HI-Medium_lgb_s3_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.5363238181543574,
+        "precision": 0.44830198207297056,
+        "recall": 0.667355760195452,
+        "pr_auc": 0.5946795870889797
+      },
+      "calibrated": {
+        "model": "HI-Medium_lgb_s3_thrCAL",
+        "threshold": 0.7365401357082496,
+        "f1": 0.5891783567134269,
+        "precision": 0.6713942307692308,
+        "recall": 0.5249013343356512,
+        "pr_auc": 0.5946795870889797
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 3,
+      "calib_threshold": 0.860853374004364,
+      "calib_set_f1": 0.16130060567376026,
+      "default": {
+        "model": "LI-Medium_xgb_s3_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.21415384615384617,
+        "precision": 0.15102527937506782,
+        "recall": 0.3679619349722443,
+        "pr_auc": 0.23883111313187616
+      },
+      "calibrated": {
+        "model": "LI-Medium_xgb_s3_thrCAL",
+        "threshold": 0.860853374004364,
+        "f1": 0.294506324334529,
+        "precision": 0.5151915455746368,
+        "recall": 0.20618556701030927,
+        "pr_auc": 0.23883111313187616
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 3,
+      "calib_threshold": 0.8747486256507749,
+      "calib_set_f1": 0.16054191363209314,
+      "default": {
+        "model": "LI-Medium_lgb_s3_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.20859340978371316,
+        "precision": 0.1437718859429715,
+        "recall": 0.3798572561459159,
+        "pr_auc": 0.25134993334162337
+      },
+      "calibrated": {
+        "model": "LI-Medium_lgb_s3_thrCAL",
+        "threshold": 0.8747486256507749,
+        "f1": 0.2971157645199526,
+        "precision": 0.5879593432369038,
+        "recall": 0.19878403383558021,
+        "pr_auc": 0.25134993334162337
+      }
+    },
+    {
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 3,
+      "calib_threshold": 0.9135852456092834,
+      "calib_set_f1": 0.34745242480004507,
+      "default": {
+        "model": "HI-Small_xgb_s3_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.361421658601702,
+        "precision": 0.25816448152562577,
+        "recall": 0.6023359288097887,
+        "pr_auc": 0.41914992593393124
+      },
+      "calibrated": {
+        "model": "HI-Small_xgb_s3_thrCAL",
+        "threshold": 0.9135852456092834,
+        "f1": 0.41663302381913603,
+        "precision": 0.759941089837997,
+        "recall": 0.28698553948832034,
+        "pr_auc": 0.41914992593393124
+      }
+    },
+    {
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 3,
+      "calib_threshold": 0.844334981047967,
+      "calib_set_f1": 0.3948110547090562,
+      "default": {
+        "model": "HI-Small_lgb_s3_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.37574750830564785,
+        "precision": 0.2678825201326386,
+        "recall": 0.6290322580645161,
+        "pr_auc": 0.4638094681982561
+      },
+      "calibrated": {
+        "model": "HI-Small_lgb_s3_thrCAL",
+        "threshold": 0.844334981047967,
+        "f1": 0.449412656309208,
+        "precision": 0.7051129607609988,
+        "recall": 0.3298109010011123,
+        "pr_auc": 0.4638094681982561
+      }
+    }
+  ]
+}
