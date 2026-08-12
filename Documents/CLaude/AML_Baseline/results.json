@@ -1,0 +1,237 @@
+{
+  "dataset": "HI-Small",
+  "n_transactions": 5078345,
+  "n_positive": 5177,
+  "split": {
+    "train": 3046861,
+    "val": 1015602,
+    "test": 1015882,
+    "train_pos": 2297,
+    "test_pos": 1798
+  },
+  "features": [
+    "LogAmountUSD",
+    "PaymentFormat",
+    "IsSelfLoop",
+    "IsSameBank",
+    "Hour",
+    "DayOfWeek",
+    "out_degree",
+    "out_unique_cp",
+    "out_avg_amt",
+    "in_degree",
+    "in_unique_cp",
+    "in_avg_amt",
+    "in_unique_banks",
+    "pair_prior_count"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "raw_results": {
+    "xgboost": [
+      {
+        "model": "xgboost_seed1",
+        "f1": 0.3353138723843968,
+        "precision": 0.3130728412928124,
+        "recall": 0.3609566184649611,
+        "pr_auc": 0.3043434582054307,
+        "precision_at_k": {
+          "100": 0.82,
+          "500": 0.668,
+          "1000": 0.481,
+          "2000": 0.323
+        },
+        "recall_at_precision90": 0.023915461624026697
+      },
+      {
+        "model": "xgboost_seed2",
+        "f1": 0.3429651633810424,
+        "precision": 0.3333333333333333,
+        "recall": 0.3531701890989989,
+        "pr_auc": 0.2921132707557566,
+        "precision_at_k": {
+          "100": 0.72,
+          "500": 0.638,
+          "1000": 0.484,
+          "2000": 0.3225
+        },
+        "recall_at_precision90": 0.01668520578420467
+      },
+      {
+        "model": "xgboost_seed3",
+        "f1": 0.31470095025153716,
+        "precision": 0.3162921348314607,
+        "recall": 0.3131256952169077,
+        "pr_auc": 0.2734180187137026,
+        "precision_at_k": {
+          "100": 0.84,
+          "500": 0.59,
+          "1000": 0.435,
+          "2000": 0.2935
+        },
+        "recall_at_precision90": 0.00778642936596218
+      }
+    ],
+    "lightgbm": [
+      {
+        "model": "lightgbm_seed1",
+        "f1": 0.3414961422341496,
+        "precision": 0.43026204564666104,
+        "recall": 0.28309232480533925,
+        "pr_auc": 0.3066406224044072,
+        "precision_at_k": {
+          "100": 0.89,
+          "500": 0.616,
+          "1000": 0.468,
+          "2000": 0.319
+        },
+        "recall_at_precision90": 0.048943270300333706
+      },
+      {
+        "model": "lightgbm_seed2",
+        "f1": 0.34219269102990035,
+        "precision": 0.4249174917491749,
+        "recall": 0.2864293659621802,
+        "pr_auc": 0.28665032438242466,
+        "precision_at_k": {
+          "100": 0.9,
+          "500": 0.7,
+          "1000": 0.494,
+          "2000": 0.2935
+        },
+        "recall_at_precision90": 0.07341490545050056
+      },
+      {
+        "model": "lightgbm_seed3",
+        "f1": 0.3412856196156395,
+        "precision": 0.42213114754098363,
+        "recall": 0.2864293659621802,
+        "pr_auc": 0.2773327770337538,
+        "precision_at_k": {
+          "100": 0.85,
+          "500": 0.674,
+          "1000": 0.477,
+          "2000": 0.293
+        },
+        "recall_at_precision90": 0.027252502780867632
+      }
+    ]
+  },
+  "summary": {
+    "xgboost": {
+      "f1": {
+        "mean": 0.33099332867232545,
+        "min": 0.31470095025153716,
+        "max": 0.3429651633810424
+      },
+      "precision": {
+        "mean": 0.32089943648586877,
+        "min": 0.3130728412928124,
+        "max": 0.3333333333333333
+      },
+      "recall": {
+        "mean": 0.3424175009269559,
+        "min": 0.3131256952169077,
+        "max": 0.3609566184649611
+      },
+      "pr_auc": {
+        "mean": 0.28995824922496327,
+        "min": 0.2734180187137026,
+        "max": 0.3043434582054307
+      },
+      "recall_at_precision90": {
+        "mean": 0.01612903225806452,
+        "min": 0.00778642936596218,
+        "max": 0.023915461624026697
+      },
+      "precision_at_100": {
+        "mean": 0.7933333333333333
+      },
+      "precision_at_500": {
+        "mean": 0.632
+      },
+      "precision_at_1000": {
+        "mean": 0.4666666666666666
+      },
+      "precision_at_2000": {
+        "mean": 0.313
+      }
+    },
+    "lightgbm": {
+      "f1": {
+        "mean": 0.34165815095989654,
+        "min": 0.3412856196156395,
+        "max": 0.34219269102990035
+      },
+      "precision": {
+        "mean": 0.42577022831227324,
+        "min": 0.42213114754098363,
+        "max": 0.43026204564666104
+      },
+      "recall": {
+        "mean": 0.2853170189098999,
+        "min": 0.28309232480533925,
+        "max": 0.2864293659621802
+      },
+      "pr_auc": {
+        "mean": 0.29020790794019524,
+        "min": 0.2773327770337538,
+        "max": 0.3066406224044072
+      },
+      "recall_at_precision90": {
+        "mean": 0.04987022617723397,
+        "min": 0.027252502780867632,
+        "max": 0.07341490545050056
+      },
+      "precision_at_100": {
+        "mean": 0.88
+      },
+      "precision_at_500": {
+        "mean": 0.6633333333333332
+      },
+      "precision_at_1000": {
+        "mean": 0.4796666666666667
+      },
+      "precision_at_2000": {
+        "mean": 0.30183333333333334
+      }
+    }
+  },
+  "feature_importance": {
+    "xgboost": {
+      "LogAmountUSD": 0.054126787930727005,
+      "PaymentFormat": 0.1719937026500702,
+      "IsSelfLoop": 0.12364160269498825,
+      "IsSameBank": 0.15375924110412598,
+      "Hour": 0.012763832695782185,
+      "DayOfWeek": 0.019267607480287552,
+      "out_degree": 0.1040329709649086,
+      "out_unique_cp": 0.0411641001701355,
+      "out_avg_amt": 0.02410738728940487,
+      "in_degree": 0.01697658933699131,
+      "in_unique_cp": 0.04718644917011261,
+      "in_avg_amt": 0.014451373368501663,
+      "in_unique_banks": 0.014923744834959507,
+      "pair_prior_count": 0.20160453021526337
+    },
+    "lightgbm": {
+      "LogAmountUSD": 764,
+      "PaymentFormat": 130,
+      "IsSelfLoop": 56,
+      "IsSameBank": 19,
+      "Hour": 364,
+      "DayOfWeek": 320,
+      "out_degree": 606,
+      "out_unique_cp": 267,
+      "out_avg_amt": 716,
+      "in_degree": 592,
+      "in_unique_cp": 380,
+      "in_avg_amt": 704,
+      "in_unique_banks": 253,
+      "pair_prior_count": 429
+    }
+  }
+}
