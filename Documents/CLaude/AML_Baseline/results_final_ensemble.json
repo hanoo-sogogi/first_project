@@ -1,0 +1,238 @@
+{
+  "merge_sources": [
+    "HI-Medium",
+    "LI-Medium",
+    "HI-Small"
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "features": [
+    "LogAmountUSD",
+    "PaymentFormat",
+    "IsSelfLoop",
+    "IsSameBank",
+    "Hour",
+    "DayOfWeek",
+    "FromIsNew",
+    "ToIsNew",
+    "FromCountry",
+    "ToCountry",
+    "IsCrossBorderBank",
+    "pair_prior_count"
+  ],
+  "results": [
+    {
+      "target": "HI-Medium",
+      "ensemble": "xgb_ens6",
+      "n_models": 6,
+      "calib_threshold": 0.46580037474632263,
+      "calib_set_f1": 0.4053878772756334,
+      "default": {
+        "model": "HI-Medium_xgb_ens6_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.5127753303964758,
+        "precision": 0.5717092337917485,
+        "recall": 0.46485623003194887,
+        "pr_auc": 0.44060345192801637
+      },
+      "calibrated": {
+        "model": "HI-Medium_xgb_ens6_thrCAL",
+        "threshold": 0.46580037474632263,
+        "f1": 0.5227272727272727,
+        "precision": 0.5384538752739589,
+        "recall": 0.5078932531479046,
+        "pr_auc": 0.44060345192801637
+      }
+    },
+    {
+      "target": "HI-Medium",
+      "ensemble": "lgb_ens6",
+      "n_models": 6,
+      "calib_threshold": 0.585395522984227,
+      "calib_set_f1": 0.44504021447671693,
+      "default": {
+        "model": "HI-Medium_lgb_ens6_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.5764419587584853,
+        "precision": 0.5282059306783506,
+        "recall": 0.6343732381131366,
+        "pr_auc": 0.5833905495769001
+      },
+      "calibrated": {
+        "model": "HI-Medium_lgb_ens6_thrCAL",
+        "threshold": 0.585395522984227,
+        "f1": 0.5846287116800616,
+        "precision": 0.5991910821742132,
+        "recall": 0.5707573764330013,
+        "pr_auc": 0.5833905495769001
+      }
+    },
+    {
+      "target": "HI-Medium",
+      "ensemble": "combined_all12",
+      "n_models": 12,
+      "calib_threshold": 0.5323924491526199,
+      "calib_set_f1": 0.43847343991698545,
+      "default": {
+        "model": "HI-Medium_combined_all12_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.5710836660785589,
+        "precision": 0.5644273127753304,
+        "recall": 0.5778988911858673,
+        "pr_auc": 0.5266993677432186
+      },
+      "calibrated": {
+        "model": "HI-Medium_combined_all12_thrCAL",
+        "threshold": 0.5323924491526199,
+        "f1": 0.5653671982673755,
+        "precision": 0.5936530907587347,
+        "recall": 0.5396542003382823,
+        "pr_auc": 0.5266993677432186
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "ensemble": "xgb_ens6",
+      "n_models": 6,
+      "calib_threshold": 0.6163483262062073,
+      "calib_set_f1": 0.14018339404547472,
+      "default": {
+        "model": "LI-Medium_xgb_ens6_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.2377772477939423,
+        "precision": 0.21659787095372582,
+        "recall": 0.26354744911445943,
+        "pr_auc": 0.1122137381309673
+      },
+      "calibrated": {
+        "model": "LI-Medium_xgb_ens6_thrCAL",
+        "threshold": 0.6163483262062073,
+        "f1": 0.24988227907706798,
+        "precision": 0.3075734157650695,
+        "recall": 0.21041501453872588,
+        "pr_auc": 0.1122137381309673
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "ensemble": "lgb_ens6",
+      "n_models": 6,
+      "calib_threshold": 0.8713213730378513,
+      "calib_set_f1": 0.162865146058134,
+      "default": {
+        "model": "LI-Medium_lgb_ens6_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.24771058119503128,
+        "precision": 0.18851780292575213,
+        "recall": 0.36108908273856727,
+        "pr_auc": 0.24243610716136588
+      },
+      "calibrated": {
+        "model": "LI-Medium_lgb_ens6_thrCAL",
+        "threshold": 0.8713213730378513,
+        "f1": 0.28607172643869894,
+        "precision": 0.6771964461994077,
+        "recall": 0.18133756278086174,
+        "pr_auc": 0.24243610716136588
+      }
+    },
+    {
+      "target": "LI-Medium",
+      "ensemble": "combined_all12",
+      "n_models": 12,
+      "calib_threshold": 0.6963249032453911,
+      "calib_set_f1": 0.15129562552194067,
+      "default": {
+        "model": "LI-Medium_combined_all12_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.25823098358963775,
+        "precision": 0.21181848967152048,
+        "recall": 0.33068992862807295,
+        "pr_auc": 0.1691445148857255
+      },
+      "calibrated": {
+        "model": "LI-Medium_combined_all12_thrCAL",
+        "threshold": 0.6963249032453911,
+        "f1": 0.272161480235492,
+        "precision": 0.37419056429232195,
+        "recall": 0.21385144065556436,
+        "pr_auc": 0.1691445148857255
+      }
+    },
+    {
+      "target": "HI-Small",
+      "ensemble": "xgb_ens6",
+      "n_models": 6,
+      "calib_threshold": 0.4644216299057007,
+      "calib_set_f1": 0.358050847457155,
+      "default": {
+        "model": "HI-Small_xgb_ens6_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.46794682422451994,
+        "precision": 0.499054820415879,
+        "recall": 0.44048943270300334,
+        "pr_auc": 0.35544728355467514
+      },
+      "calibrated": {
+        "model": "HI-Small_xgb_ens6_thrCAL",
+        "threshold": 0.4644216299057007,
+        "f1": 0.4734404794333969,
+        "precision": 0.4639615589962627,
+        "recall": 0.4833147942157953,
+        "pr_auc": 0.35544728355467514
+      }
+    },
+    {
+      "target": "HI-Small",
+      "ensemble": "lgb_ens6",
+      "n_models": 6,
+      "calib_threshold": 0.6949415852445494,
+      "calib_set_f1": 0.43690248565915646,
+      "default": {
+        "model": "HI-Small_lgb_ens6_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.48712690817953974,
+        "precision": 0.4125820146661521,
+        "recall": 0.5945494994438265,
+        "pr_auc": 0.5121153391067071
+      },
+      "calibrated": {
+        "model": "HI-Small_lgb_ens6_thrCAL",
+        "threshold": 0.6949415852445494,
+        "f1": 0.504790221341262,
+        "precision": 0.6216436126932465,
+        "recall": 0.42491657397107896,
+        "pr_auc": 0.5121153391067071
+      }
+    },
+    {
+      "target": "HI-Small",
+      "ensemble": "combined_all12",
+      "n_models": 12,
+      "calib_threshold": 0.5951909871502843,
+      "calib_set_f1": 0.41373080397420664,
+      "default": {
+        "model": "HI-Small_combined_all12_thr0.5",
+        "threshold": 0.5,
+        "f1": 0.5098958333333333,
+        "precision": 0.4794319294809011,
+        "recall": 0.5444938820912124,
+        "pr_auc": 0.44775363656416944
+      },
+      "calibrated": {
+        "model": "HI-Small_combined_all12_thrCAL",
+        "threshold": 0.5951909871502843,
+        "f1": 0.4993654822335025,
+        "precision": 0.5812407680945347,
+        "recall": 0.43770856507230255,
+        "pr_auc": 0.44775363656416944
+      }
+    }
+  ]
+}

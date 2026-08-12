@@ -1,0 +1,1874 @@
+{
+  "feature_sets": {
+    "hub_flag": [
+      "LogAmountUSD",
+      "PaymentFormat",
+      "IsSelfLoop",
+      "IsSameBank",
+      "Hour",
+      "DayOfWeek",
+      "FromIsNew",
+      "ToIsNew",
+      "FromCountry",
+      "ToCountry",
+      "IsCrossBorderBank",
+      "pair_prior_count",
+      "IsHubInvolved"
+    ],
+    "hub_dev": [
+      "LogAmountUSD",
+      "PaymentFormat",
+      "IsSelfLoop",
+      "IsSameBank",
+      "Hour",
+      "DayOfWeek",
+      "FromIsNew",
+      "ToIsNew",
+      "FromCountry",
+      "ToCountry",
+      "IsCrossBorderBank",
+      "pair_prior_count",
+      "IsHubInvolved",
+      "HubAmountDeviation"
+    ]
+  },
+  "hub_bank_id": 70,
+  "results": [
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.5290493931904534,
+        "precision": 0.4354770146353313,
+        "recall": 0.6738395038526592,
+        "pr_auc": 0.597556710984789
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.9005577995768417,
+        "precision": 0.942305112035422,
+        "recall": 0.862352652259332,
+        "pr_auc": 0.9745812027567093
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.02571230020847811,
+        "precision": 0.016418903927224317,
+        "recall": 0.059247397918334666,
+        "pr_auc": 0.009142544507786465
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014898322777024682
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5477809181880682,
+        "precision": 0.4357681088964511,
+        "recall": 0.7373020769072589,
+        "pr_auc": 0.6528693388238356
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.5397681085012621,
+        "precision": 0.49548346555651557,
+        "recall": 0.5927457244878782,
+        "pr_auc": 0.5392694663113793
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.8552686093081067,
+        "precision": 0.9771221205427579,
+        "recall": 0.7604371316306483,
+        "pr_auc": 0.9805691670558422
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.02586885614666517,
+        "precision": 0.017988424839668386,
+        "recall": 0.04603682946357086,
+        "pr_auc": 0.008772564526095932
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015443214276369287
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5617847441777619,
+        "precision": 0.49548346555651557,
+        "recall": 0.6485708410446227,
+        "pr_auc": 0.5890118614028654
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.20322354590049055,
+        "precision": 0.13826642509774006,
+        "recall": 0.38329368226275445,
+        "pr_auc": 0.25257191705398185
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.899492385786802,
+        "precision": 0.9359154929577465,
+        "recall": 0.8657980456026059,
+        "pr_auc": 0.9766318160408713
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.02138753866548829,
+        "precision": 0.013345097606705636,
+        "recall": 0.05382562277580071,
+        "pr_auc": 0.007681609376035516
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.00155537588941881
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.21670901210581378,
+        "precision": 0.1383587786259542,
+        "recall": 0.4996554100620262,
+        "pr_auc": 0.32752091179454346
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.22604074402125776,
+        "precision": 0.16997469028906353,
+        "recall": 0.3372984403912239,
+        "pr_auc": 0.20174511456087899
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.8609898107714702,
+        "precision": 0.9752679307502061,
+        "recall": 0.7706840390879479,
+        "pr_auc": 0.9820924702049117
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.021774760009365488,
+        "precision": 0.014775977121067683,
+        "recall": 0.041370106761565835,
+        "pr_auc": 0.007448561444469936
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015685333734753125
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.24517244692093382,
+        "precision": 0.16997469028906353,
+        "recall": 0.43969676085458304,
+        "pr_auc": 0.2611133655159245
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.35773924213230573,
+        "precision": 0.2514672686230248,
+        "recall": 0.6195773081201335,
+        "pr_auc": 0.43618957627312177
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.8753036437246964,
+        "precision": 0.9557913351016799,
+        "recall": 0.8073188946975355,
+        "pr_auc": 0.9778484546576132
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.017562533262373604,
+        "precision": 0.010003031221582298,
+        "recall": 0.0718954248366013,
+        "pr_auc": 0.005627238011780546
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.001271593423333288
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.36530578783407114,
+        "precision": 0.2514672686230248,
+        "recall": 0.6674655482324745,
+        "pr_auc": 0.46928196198302036
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.3963628848935731,
+        "precision": 0.3153567905294311,
+        "recall": 0.5333704115684094,
+        "pr_auc": 0.37957158494766496
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.8225032708242477,
+        "precision": 0.9884696016771488,
+        "recall": 0.7042569081404033,
+        "pr_auc": 0.9812967791652627
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.012568735271013355,
+        "precision": 0.007666506947771922,
+        "recall": 0.034858387799564274,
+        "pr_auc": 0.005228635686814091
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014151745675945423
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.4072186836518047,
+        "precision": 0.3153567905294311,
+        "recall": 0.5745955662073098,
+        "pr_auc": 0.40822267471464774
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.33815530609883115,
+        "precision": 0.44006024096385543,
+        "recall": 0.27457244878782183,
+        "pr_auc": 0.22180494711172763
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.514575411913815,
+        "precision": 0.9793246037215714,
+        "recall": 0.34896856581532415,
+        "pr_auc": 0.9607201545837952
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.025657472738935216,
+        "precision": 0.021401819154628143,
+        "recall": 0.032025620496397116,
+        "pr_auc": 0.005193499861342386
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014954631269808595
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.35780322047388724,
+        "precision": 0.44225821098834567,
+        "recall": 0.3004318322023442,
+        "pr_auc": 0.25655412159750435
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.5395164352926284,
+        "precision": 0.48962242475300605,
+        "recall": 0.6007329449351626,
+        "pr_auc": 0.5444469510387849
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.8618131868131869,
+        "precision": 0.9778678304239401,
+        "recall": 0.7703831041257367,
+        "pr_auc": 0.9808167556336287
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.026042236568552358,
+        "precision": 0.017918988104201176,
+        "recall": 0.047638110488390714,
+        "pr_auc": 0.008764008091308615
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015807181937184528
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5612079181846114,
+        "precision": 0.48962242475300605,
+        "recall": 0.6573103022825416,
+        "pr_auc": 0.5946566044246165
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.14873737373737372,
+        "precision": 0.14237370074933528,
+        "recall": 0.1556965371398361,
+        "pr_auc": 0.042795154603524024
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.5079518072289156,
+        "precision": 0.975925925925926,
+        "recall": 0.3433224755700326,
+        "pr_auc": 0.9549620544878892
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.021214713430282292,
+        "precision": 0.017236586043925493,
+        "recall": 0.027580071174377226,
+        "pr_auc": 0.004310730159991258
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015417202519531744
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.16797376301154998,
+        "precision": 0.14327414254439308,
+        "recall": 0.20296347346657478,
+        "pr_auc": 0.05990697510246811
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.2198908222449676,
+        "precision": 0.16232212567686688,
+        "recall": 0.3407348665080624,
+        "pr_auc": 0.20625986872738847
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.8649237472766884,
+        "precision": 0.9770303527481542,
+        "recall": 0.7758957654723126,
+        "pr_auc": 0.9820722149361099
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.02185061315496098,
+        "precision": 0.01457899434692056,
+        "recall": 0.04359430604982206,
+        "pr_auc": 0.007382704040558743
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015955892446871702
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.23775707829936366,
+        "precision": 0.16232212567686688,
+        "recall": 0.4441764300482426,
+        "pr_auc": 0.26702966743375667
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.19233736178966315,
+        "precision": 0.17886178861788618,
+        "recall": 0.20800889877641823,
+        "pr_auc": 0.07275924158722899
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.4225352112676056,
+        "precision": 0.9863013698630136,
+        "recall": 0.268857356235997,
+        "pr_auc": 0.9656234131633226
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.012814645308924484,
+        "precision": 0.008111239860950173,
+        "recall": 0.030501089324618737,
+        "pr_auc": 0.0028547136295847867
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0013263800135531257
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.19909502262443438,
+        "precision": 0.17911877394636017,
+        "recall": 0.22408627920910726,
+        "pr_auc": 0.08244509013791262
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.3787878787878788,
+        "precision": 0.291044776119403,
+        "recall": 0.5422691879866518,
+        "pr_auc": 0.37981386653101823
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.8278546712802768,
+        "precision": 0.9835560123329907,
+        "recall": 0.7147124719940254,
+        "pr_auc": 0.9825636893957913
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.012693935119887164,
+        "precision": 0.007572570466975179,
+        "recall": 0.0392156862745098,
+        "pr_auc": 0.005449906939375866
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0013803849279820897
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.38852361028093246,
+        "precision": 0.291044776119403,
+        "recall": 0.5841821449970042,
+        "pr_auc": 0.40858874578798043
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.4890183969034054,
+        "precision": 0.4551858149137722,
+        "recall": 0.5282841571133245,
+        "pr_auc": 0.5129700934974519
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.7943877920011572,
+        "precision": 0.9663909906739399,
+        "recall": 0.6743614931237721,
+        "pr_auc": 0.9738229410938987
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.02836569932358717,
+        "precision": 0.019496100779844032,
+        "recall": 0.05204163330664532,
+        "pr_auc": 0.006897647224355003
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.001465715686126167
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5094929539172595,
+        "precision": 0.45548083934213723,
+        "recall": 0.5780382479950648,
+        "pr_auc": 0.5655152758062578
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.5419365155512913,
+        "precision": 0.47161146674088505,
+        "recall": 0.6369103551963916,
+        "pr_auc": 0.5659745348340036
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.884612823756575,
+        "precision": 0.9662545454545455,
+        "recall": 0.8156925343811395,
+        "pr_auc": 0.9806423779113038
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.027013506753376687,
+        "precision": 0.01800720288115246,
+        "recall": 0.05404323458767014,
+        "pr_auc": 0.009577311468754937
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015222276618508997
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5625363100672255,
+        "precision": 0.47161146674088505,
+        "recall": 0.6968949208307629,
+        "pr_auc": 0.617481316004696
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.1962429008300568,
+        "precision": 0.14656747585486818,
+        "recall": 0.29685434840074015,
+        "pr_auc": 0.2043737525768987
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.7932618683001531,
+        "precision": 0.9619312906220984,
+        "recall": 0.6749185667752443,
+        "pr_auc": 0.9734353002320535
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.01969885656062493,
+        "precision": 0.013211845102505695,
+        "recall": 0.03870106761565836,
+        "pr_auc": 0.0054789927987340505
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0016008218885437443
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.21285064442759666,
+        "precision": 0.14679738562091504,
+        "recall": 0.3869745003445899,
+        "pr_auc": 0.26766789635567056
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.2198417139659445,
+        "precision": 0.15757506303002522,
+        "recall": 0.3634681469733016,
+        "pr_auc": 0.2260495516998412
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.8894331700489853,
+        "precision": 0.9606953892668179,
+        "recall": 0.8280130293159609,
+        "pr_auc": 0.9824444737019981
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.021552170759506786,
+        "precision": 0.014048358773470215,
+        "recall": 0.046263345195729534,
+        "pr_auc": 0.008114324166242177
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0016079899288919779
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.23649810801513588,
+        "precision": 0.15757506303002522,
+        "recall": 0.4738111647139904,
+        "pr_auc": 0.29236339781192017
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.32468523464326593,
+        "precision": 0.24709639953542392,
+        "recall": 0.4733036707452725,
+        "pr_auc": 0.33287762276389254
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.7586837294332724,
+        "precision": 0.9776207302709069,
+        "recall": 0.619865571321882,
+        "pr_auc": 0.9770049165238275
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.0137524557956778,
+        "precision": 0.008092485549132947,
+        "recall": 0.0457516339869281,
+        "pr_auc": 0.004077723240919356
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0013582517218340496
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.33287698024643064,
+        "precision": 0.24709639953542392,
+        "recall": 0.5098861593768724,
+        "pr_auc": 0.3596192858831584
+      }
+    },
+    {
+      "feature_set": "hub_flag",
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.395837275307474,
+        "precision": 0.299971322053341,
+        "recall": 0.5817575083426029,
+        "pr_auc": 0.4177825680536444
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.8559463986599665,
+        "precision": 0.9742612011439467,
+        "recall": 0.7632561613144138,
+        "pr_auc": 0.9811479100916407
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.016568864342423197,
+        "precision": 0.009844134536505332,
+        "recall": 0.05228758169934641,
+        "pr_auc": 0.005583782668555227
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0012608708472933825
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.4057408844065167,
+        "precision": 0.299971322053341,
+        "recall": 0.6267225883762733,
+        "pr_auc": 0.4491321840910005
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.41744826559475956,
+        "precision": 0.4423178041855085,
+        "recall": 0.39522646119150534,
+        "pr_auc": 0.28851009566795915
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.6606654878636875,
+        "precision": 0.9562587249883667,
+        "recall": 0.5046660117878192,
+        "pr_auc": 0.9539361120846304
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.024905954079647165,
+        "precision": 0.018422567645365574,
+        "recall": 0.03843074459567654,
+        "pr_auc": 0.005966583815584817
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014635395889639616
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.4376235563416918,
+        "precision": 0.4429233361415333,
+        "recall": 0.432449105490438,
+        "pr_auc": 0.3266079527844891
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.5381738352711603,
+        "precision": 0.4742762969332187,
+        "recall": 0.6219695545950009,
+        "pr_auc": 0.5449152796565893
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.8743184113093234,
+        "precision": 0.9676650275666816,
+        "recall": 0.7973968565815324,
+        "pr_auc": 0.9786363171523771
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.025659447808683157,
+        "precision": 0.01725327812284334,
+        "recall": 0.0500400320256205,
+        "pr_auc": 0.009001977955511971
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015650695720088753
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5589899501731272,
+        "precision": 0.4742762969332187,
+        "recall": 0.6805469874563027,
+        "pr_auc": 0.5946747973209008
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.16680194805194806,
+        "precision": 0.13535320270047752,
+        "recall": 0.21728786677240286,
+        "pr_auc": 0.05739765959814761
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.6448557899268188,
+        "precision": 0.950507614213198,
+        "recall": 0.48794788273615636,
+        "pr_auc": 0.9463257988982575
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.019381388557015797,
+        "precision": 0.01381267738883633,
+        "recall": 0.032473309608540925,
+        "pr_auc": 0.004672803323067721
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015374828118118315
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.18335935757305377,
+        "precision": 0.13555408970976254,
+        "recall": 0.2832529290144728,
+        "pr_auc": 0.07798744396371932
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.21545705471667478,
+        "precision": 0.15547744581136497,
+        "recall": 0.3507798043880518,
+        "pr_auc": 0.20491768723780895
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.8737104233368908,
+        "precision": 0.9623824451410659,
+        "recall": 0.8,
+        "pr_auc": 0.979891603277445
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.02082675923004102,
+        "precision": 0.013638242182118749,
+        "recall": 0.04403914590747331,
+        "pr_auc": 0.007654467430397705
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0016045346210836792
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.23205386027804495,
+        "precision": 0.15547744581136497,
+        "recall": 0.45727084769124743,
+        "pr_auc": 0.2649458029352744
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.2661918539951035,
+        "precision": 0.22189239332096475,
+        "recall": 0.3325917686318131,
+        "pr_auc": 0.1109989992212463
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.6022610483042138,
+        "precision": 0.9654036243822076,
+        "recall": 0.43764002987303957,
+        "pr_auc": 0.9614823232057721
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.009422850412249705,
+        "precision": 0.005747126436781609,
+        "recall": 0.026143790849673203,
+        "pr_auc": 0.0033265875502932027
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.001312304049215545
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.2741861531407611,
+        "precision": 0.2220571852952098,
+        "recall": 0.35829838226482924,
+        "pr_auc": 0.12299152052541949
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 1,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.3894147189491984,
+        "precision": 0.29831311038768865,
+        "recall": 0.560622914349277,
+        "pr_auc": 0.3814227539176236
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.8393694077545804,
+        "precision": 0.9771825396825397,
+        "recall": 0.7356235997012696,
+        "pr_auc": 0.9801522288813984
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.01625441696113074,
+        "precision": 0.009700548291859975,
+        "recall": 0.05010893246187364,
+        "pr_auc": 0.005389470207952483
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.00138211859439233
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.3993660855784469,
+        "precision": 0.29831311038768865,
+        "recall": 0.6039544637507489,
+        "pr_auc": 0.410061908874024
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.3594883842338815,
+        "precision": 0.4044402678256784,
+        "recall": 0.3235294117647059,
+        "pr_auc": 0.23092994788517587
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.5779998277198725,
+        "precision": 0.9682539682539683,
+        "recall": 0.41195972495088407,
+        "pr_auc": 0.9528837734154632
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.023323615160349854,
+        "precision": 0.017432646592709985,
+        "recall": 0.03522818254603683,
+        "pr_auc": 0.005348499784674844
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014505398097983963
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.37777046302391926,
+        "precision": 0.40496353799106094,
+        "recall": 0.3539995887312359,
+        "pr_auc": 0.2668839877105007
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.5406086374552183,
+        "precision": 0.46520766989633444,
+        "recall": 0.6451794775418155,
+        "pr_auc": 0.5745649420217367
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.8875989445910291,
+        "precision": 0.9589509692132269,
+        "recall": 0.8261296660117878,
+        "pr_auc": 0.9797215394196737
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.02695049311590665,
+        "precision": 0.017822549399457575,
+        "recall": 0.055244195356285025,
+        "pr_auc": 0.009674441505342066
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015172962764093017
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5608331631611191,
+        "precision": 0.46520766989633444,
+        "recall": 0.7059428336417849,
+        "pr_auc": 0.6267005019296203
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.1452396031243403,
+        "precision": 0.12089263749780355,
+        "recall": 0.18186624372191382,
+        "pr_auc": 0.043772507463685585
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.5707720588235294,
+        "precision": 0.968798751950078,
+        "recall": 0.4045602605863192,
+        "pr_auc": 0.9472699868073986
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.018361194847903536,
+        "precision": 0.013267326732673267,
+        "recall": 0.029804270462633453,
+        "pr_auc": 0.0042147445049048994
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015468322688723954
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.16031690551089361,
+        "precision": 0.12110543918324239,
+        "recall": 0.2370778773259821,
+        "pr_auc": 0.06094287391397105
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.21928582664778984,
+        "precision": 0.15608554473183295,
+        "recall": 0.36849061591329635,
+        "pr_auc": 0.23318608919613645
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.8941339812565081,
+        "precision": 0.9569093610698366,
+        "recall": 0.8390879478827361,
+        "pr_auc": 0.9810457197660579
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.02156005288314858,
+        "precision": 0.013974950560316415,
+        "recall": 0.04715302491103203,
+        "pr_auc": 0.008255794144038835
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.001603194023591046
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.23561227076819066,
+        "precision": 0.15608554473183295,
+        "recall": 0.48035837353549277,
+        "pr_auc": 0.30156821692110536
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.21806270472625175,
+        "precision": 0.18820678513731826,
+        "recall": 0.25917686318131256,
+        "pr_auc": 0.08115726317688568
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.5016611295681063,
+        "precision": 0.9700214132762313,
+        "recall": 0.33831217326362956,
+        "pr_auc": 0.9579232031081581
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.01053484602917342,
+        "precision": 0.006470881035340966,
+        "recall": 0.02832244008714597,
+        "pr_auc": 0.00290142991549438
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014377227133900855
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.22484921592279855,
+        "precision": 0.18820678513731826,
+        "recall": 0.2792091072498502,
+        "pr_auc": 0.0920886657339083
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 2,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.3915189179309084,
+        "precision": 0.2915872583719031,
+        "recall": 0.5956618464961068,
+        "pr_auc": 0.42561750378522634
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.865424430641822,
+        "precision": 0.9711895910780669,
+        "recall": 0.7804331590739357,
+        "pr_auc": 0.981451316221534
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.017015706806282723,
+        "precision": 0.010011551790527531,
+        "recall": 0.05664488017429194,
+        "pr_auc": 0.006307490267474736
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014049145356491918
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.4009734181954324,
+        "precision": 0.2915872583719031,
+        "recall": 0.6417016177351708,
+        "pr_auc": 0.457470394836433
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Medium",
+      "model_type": "xgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.523650444157619,
+        "precision": 0.43929936305732487,
+        "recall": 0.6480924638225898,
+        "pr_auc": 0.5682681521834736
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.8869004539772354,
+        "precision": 0.9553508150248051,
+        "recall": 0.8276031434184676,
+        "pr_auc": 0.9758153695093148
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.028179125908642196,
+        "precision": 0.018160786581839214,
+        "recall": 0.06285028022417935,
+        "pr_auc": 0.007983156978089864
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014513400986330028
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5428357797804101,
+        "precision": 0.43971947720752314,
+        "recall": 0.7091301665638495,
+        "pr_auc": 0.6232028863730026
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Medium",
+      "model_type": "lgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6380182,
+        "n_pos": 10642,
+        "f1": 0.5350910327113394,
+        "precision": 0.44738504295098536,
+        "recall": 0.6655703815072355,
+        "pr_auc": 0.5942839006198001
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 8934,
+        "n_pos": 8144,
+        "f1": 0.89902068876062,
+        "precision": 0.9527147766323024,
+        "recall": 0.8510559921414538,
+        "pr_auc": 0.9800847823921773
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6371248,
+        "n_pos": 2498,
+        "f1": 0.027498869289914067,
+        "precision": 0.01776323477854388,
+        "recall": 0.06084867894315452,
+        "pr_auc": 0.009954150637913719
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 639325,
+        "n_pos": 916,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0014928054819949772
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5740857,
+        "n_pos": 9726,
+        "f1": 0.5542687221222318,
+        "precision": 0.44738504295098536,
+        "recall": 0.7282541640962369,
+        "pr_auc": 0.6482449710941839
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "LI-Medium",
+      "model_type": "xgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.20200990387416254,
+        "precision": 0.13941099608000804,
+        "recall": 0.36664023261961404,
+        "pr_auc": 0.23107087128571507
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.8875,
+        "precision": 0.950185873605948,
+        "recall": 0.8325732899022801,
+        "pr_auc": 0.9768521857322341
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.02008846295613712,
+        "precision": 0.012668526266852626,
+        "recall": 0.04848754448398576,
+        "pr_auc": 0.006597101924543995
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015755806936810543
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.2160436137071651,
+        "precision": 0.13956530489031999,
+        "recall": 0.4779462439696761,
+        "pr_auc": 0.30091437812849214
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "LI-Medium",
+      "model_type": "lgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 6250366,
+        "n_pos": 3783,
+        "f1": 0.21019755955839628,
+        "precision": 0.14491737606409613,
+        "recall": 0.3825006608511763,
+        "pr_auc": 0.25371429360999076
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1709,
+        "n_pos": 1535,
+        "f1": 0.9054930058000682,
+        "precision": 0.9505730659025788,
+        "recall": 0.8644951140065147,
+        "pr_auc": 0.9820486973619887
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 6248657,
+        "n_pos": 2248,
+        "f1": 0.022146350465996126,
+        "precision": 0.013971358714634998,
+        "recall": 0.05338078291814947,
+        "pr_auc": 0.008456208987194335
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 624376,
+        "n_pos": 881,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0015771816060481947
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 5625990,
+        "n_pos": 2902,
+        "f1": 0.22456739349732288,
+        "precision": 0.14491737606409613,
+        "recall": 0.49862164024810474,
+        "pr_auc": 0.3283256655365924
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Small",
+      "model_type": "xgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.3473822851498189,
+        "precision": 0.24672591206735267,
+        "recall": 0.5867630700778643,
+        "pr_auc": 0.3941324782592875
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.8539325842696629,
+        "precision": 0.9642857142857143,
+        "recall": 0.7662434652725915,
+        "pr_auc": 0.9793847007314427
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.01579950967038954,
+        "precision": 0.009028642590286426,
+        "recall": 0.06318082788671024,
+        "pr_auc": 0.004791870635420008
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0012998592166167807
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.3550395423186943,
+        "precision": 0.24684136640149743,
+        "recall": 0.6321150389454764,
+        "pr_auc": 0.4248800595849711
+      }
+    },
+    {
+      "feature_set": "hub_dev",
+      "target": "HI-Small",
+      "model_type": "lgb",
+      "seed": 3,
+      "pooled": {
+        "stratum": "pooled",
+        "n": 1015882,
+        "n_pos": 1798,
+        "f1": 0.3775235531628533,
+        "precision": 0.2706222865412446,
+        "recall": 0.6240266963292548,
+        "pr_auc": 0.46857351225357785
+      },
+      "in_pattern": {
+        "stratum": "in_pattern",
+        "n": 1449,
+        "n_pos": 1339,
+        "f1": 0.8813559322033898,
+        "precision": 0.9587357330992098,
+        "recall": 0.8155339805825242,
+        "pr_auc": 0.9819117453635297
+      },
+      "normal_embedded": {
+        "stratum": "normal_embedded",
+        "n": 1014433,
+        "n_pos": 459,
+        "f1": 0.017311021350259664,
+        "precision": 0.009976720984369804,
+        "recall": 0.06535947712418301,
+        "pr_auc": 0.006163465030514361
+      },
+      "hub_involved": {
+        "stratum": "hub_involved",
+        "n": 97496,
+        "n_pos": 129,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "pr_auc": 0.0013359651772883395
+      },
+      "non_hub": {
+        "stratum": "non_hub",
+        "n": 918386,
+        "n_pos": 1669,
+        "f1": 0.38589853826311266,
+        "precision": 0.2706222865412446,
+        "recall": 0.6722588376273217,
+        "pr_auc": 0.5037723990422908
+      }
+    }
+  ]
+}
