@@ -1,0 +1,14 @@
+joblib==1.5.3
+lightgbm==4.7.0
+narwhals==2.24.0
+numpy==2.5.1
+nvidia-nccl-cu13==2.30.7
+pandas==3.0.5
+pyarrow==25.0.0
+python-dateutil==2.9.0.post0
+scikit-learn==1.9.0
+scipy==1.18.0
+six==1.17.0
+snapml==1.17.2
+threadpoolctl==3.6.0
+xgboost==3.4.0
