@@ -1,0 +1,600 @@
+{
+  "HI-Small": {
+    "accounts": {
+      "n_accounts": 518581,
+      "n_banks": 30470,
+      "top_countries": {
+        "Unknown": 201080,
+        "Germany": 32733,
+        "Switzerland": 24949,
+        "China": 23489,
+        "France": 21416,
+        "India": 19359,
+        "Israel": 19248,
+        "UK": 17982,
+        "Italy": 17433,
+        "Japan": 17156
+      },
+      "entity_type_dist": {
+        "Partnership": 189683,
+        "Corporation": 172351,
+        "Sole Proprietorship": 149048,
+        "Country": 6692,
+        "Individual": 740,
+        "Direct": 67
+      }
+    },
+    "patterns": {
+      "pattern_instance_counts": {
+        "FAN-OUT": 48,
+        "CYCLE": 54,
+        "GATHER-SCATTER": 51,
+        "STACK": 43,
+        "RANDOM": 41,
+        "BIPARTITE": 49,
+        "FAN-IN": 40,
+        "SCATTER-GATHER": 44
+      },
+      "pattern_transaction_counts": {
+        "FAN-OUT": 342,
+        "CYCLE": 287,
+        "GATHER-SCATTER": 716,
+        "STACK": 466,
+        "RANDOM": 191,
+        "BIPARTITE": 263,
+        "FAN-IN": 318,
+        "SCATTER-GATHER": 626
+      },
+      "total_pattern_instances": 370,
+      "total_pattern_transactions": 3209
+    },
+    "transactions": {
+      "n_transactions": 5078345,
+      "n_laundering": 5177,
+      "laundering_rate_pct": 0.10194266045335636,
+      "laundering_ratio_1_per_n": 980.9435966776125,
+      "n_unique_accounts_in_trans": 515088,
+      "n_unique_banks_in_trans": 30528,
+      "date_min": "2022-09-01 00:00:00",
+      "date_max": "2022-09-18 16:18:00",
+      "days_spanned": 18,
+      "payment_format_dist": {
+        "Cheque": 1864331,
+        "Credit Card": 1323324,
+        "ACH": 600797,
+        "Cash": 490891,
+        "Reinvestment": 481056,
+        "Wire": 171855,
+        "Bitcoin": 146091
+      },
+      "payment_currency_dist": {
+        "US Dollar": 1895172,
+        "Euro": 1168297,
+        "Swiss Franc": 234860,
+        "Yuan": 213752,
+        "Shekel": 192184,
+        "Rupee": 190202,
+        "UK Pound": 180738,
+        "Yen": 155209,
+        "Ruble": 155178,
+        "Bitcoin": 146066
+      },
+      "receiving_currency_dist": {
+        "US Dollar": 1879341,
+        "Euro": 1172017,
+        "Swiss Franc": 237884,
+        "Yuan": 206551,
+        "Shekel": 194988,
+        "Rupee": 192065,
+        "UK Pound": 181255,
+        "Ruble": 157361,
+        "Yen": 156319,
+        "Bitcoin": 148151
+      },
+      "self_loop_rate_pct": 11.641824255736859,
+      "same_bank_rate_pct": 13.61181644807511,
+      "cross_currency_rate_pct": 1.4211322783308342,
+      "avg_amount_paid_raw": 4509273.505896902,
+      "min_amount_paid": 9.999999974752427e-07,
+      "max_amount_paid": 1046302359552.0
+    }
+  },
+  "LI-Small": {
+    "accounts": {
+      "n_accounts": 712688,
+      "n_banks": 41815,
+      "top_countries": {
+        "Unknown": 273163,
+        "China": 48647,
+        "Germany": 39838,
+        "France": 33482,
+        "India": 32825,
+        "Crytpo": 30450,
+        "Italy": 26527,
+        "Saudi Arabia": 25777,
+        "Japan": 22479,
+        "Spain": 21311
+      },
+      "entity_type_dist": {
+        "Corporation": 268892,
+        "Partnership": 225814,
+        "Sole Proprietorship": 217131,
+        "Individual": 851
+      }
+    },
+    "patterns": {
+      "pattern_instance_counts": {
+        "FAN-IN": 12,
+        "GATHER-SCATTER": 12,
+        "RANDOM": 15,
+        "SCATTER-GATHER": 13,
+        "FAN-OUT": 19,
+        "STACK": 18,
+        "BIPARTITE": 16,
+        "CYCLE": 12
+      },
+      "pattern_transaction_counts": {
+        "FAN-IN": 73,
+        "GATHER-SCATTER": 150,
+        "RANDOM": 77,
+        "SCATTER-GATHER": 182,
+        "FAN-OUT": 149,
+        "STACK": 180,
+        "BIPARTITE": 129,
+        "CYCLE": 83
+      },
+      "total_pattern_instances": 117,
+      "total_pattern_transactions": 1023
+    },
+    "transactions": {
+      "n_transactions": 6924049,
+      "n_laundering": 3565,
+      "laundering_rate_pct": 0.05148721506736882,
+      "laundering_ratio_1_per_n": 1942.2297335203366,
+      "n_unique_accounts_in_trans": 705907,
+      "n_unique_banks_in_trans": 41867,
+      "date_min": "2022-09-01 00:00:00",
+      "date_max": "2022-09-17 15:28:00",
+      "days_spanned": 17,
+      "payment_format_dist": {
+        "Cheque": 2503158,
+        "Credit Card": 1780389,
+        "Reinvestment": 650458,
+        "ACH": 796581,
+        "Cash": 655688,
+        "Bitcoin": 309208,
+        "Wire": 228567
+      },
+      "payment_currency_dist": {
+        "US Dollar": 2553887,
+        "Euro": 1595859,
+        "Yuan": 483603,
+        "Rupee": 340641,
+        "Bitcoin": 309240,
+        "Saudi Riyal": 257948,
+        "Australian Dollar": 211155,
+        "Yen": 210125,
+        "Brazil Real": 199840,
+        "Canadian Dollar": 176069
+      },
+      "receiving_currency_dist": {
+        "US Dollar": 2537242,
+        "Euro": 1596407,
+        "Yuan": 474978,
+        "Rupee": 344237,
+        "Bitcoin": 313196,
+        "Saudi Riyal": 261882,
+        "Australian Dollar": 213905,
+        "Yen": 211631,
+        "Brazil Real": 202717,
+        "Canadian Dollar": 177966
+      },
+      "self_loop_rate_pct": 11.618591953927536,
+      "same_bank_rate_pct": 13.171512795475595,
+      "cross_currency_rate_pct": 1.4280083806454864,
+      "avg_amount_paid_raw": 4676036.077420019,
+      "min_amount_paid": 9.999999974752427e-07,
+      "max_amount_paid": 3644853583872.0
+    }
+  },
+  "HI-Medium": {
+    "accounts": {
+      "n_accounts": 2087786,
+      "n_banks": 122333,
+      "top_countries": {
+        "Unknown": 775297,
+        "China": 145333,
+        "Germany": 117891,
+        "France": 100405,
+        "Israel": 90730,
+        "Italy": 81270,
+        "Canada": 69383,
+        "Spain": 68606,
+        "UK": 67079,
+        "Russia": 61548
+      },
+      "entity_type_dist": {
+        "Partnership": 732828,
+        "Corporation": 679329,
+        "Sole Proprietorship": 667814,
+        "Country": 4738,
+        "Individual": 3050,
+        "Direct": 27
+      }
+    },
+    "patterns": {
+      "pattern_instance_counts": {
+        "STACK": 336,
+        "CYCLE": 367,
+        "FAN-IN": 355,
+        "GATHER-SCATTER": 322,
+        "BIPARTITE": 369,
+        "FAN-OUT": 345,
+        "SCATTER-GATHER": 331,
+        "RANDOM": 331
+      },
+      "pattern_transaction_counts": {
+        "STACK": 3986,
+        "CYCLE": 2235,
+        "FAN-IN": 2315,
+        "GATHER-SCATTER": 4289,
+        "BIPARTITE": 2135,
+        "FAN-OUT": 2128,
+        "SCATTER-GATHER": 3988,
+        "RANDOM": 1667
+      },
+      "total_pattern_instances": 2756,
+      "total_pattern_transactions": 22743
+    },
+    "transactions": {
+      "n_transactions": 31898238,
+      "n_laundering": 35230,
+      "laundering_rate_pct": 0.11044497191349566,
+      "laundering_ratio_1_per_n": 905.4282713596367,
+      "n_unique_accounts_in_trans": 2077023,
+      "n_unique_banks_in_trans": 122394,
+      "date_min": "2022-09-01 00:00:00",
+      "date_max": "2022-09-28 15:58:00",
+      "days_spanned": 28,
+      "payment_format_dist": {
+        "Reinvestment": 1945611,
+        "Cheque": 12280058,
+        "Credit Card": 8777816,
+        "ACH": 3868410,
+        "Cash": 3217531,
+        "Wire": 1119774,
+        "Bitcoin": 689038
+      },
+      "payment_currency_dist": {
+        "US Dollar": 11688249,
+        "Euro": 7315958,
+        "Yuan": 2330638,
+        "Shekel": 1408707,
+        "Canadian Dollar": 1078358,
+        "UK Pound": 1018575,
+        "Ruble": 975525,
+        "Australian Dollar": 918569,
+        "Yen": 856132,
+        "Swiss Franc": 844623
+      },
+      "receiving_currency_dist": {
+        "US Dollar": 11594241,
+        "Euro": 7329170,
+        "Yuan": 2295849,
+        "Shekel": 1428622,
+        "Canadian Dollar": 1089398,
+        "UK Pound": 1020042,
+        "Ruble": 989319,
+        "Australian Dollar": 931364,
+        "Yen": 860154,
+        "Swiss Franc": 856680
+      },
+      "self_loop_rate_pct": 8.031352703556855,
+      "same_bank_rate_pct": 8.795514034348857,
+      "cross_currency_rate_pct": 1.5209115939256581,
+      "avg_amount_paid_raw": 4417550.7984199,
+      "min_amount_paid": 9.999999974752427e-07,
+      "max_amount_paid": 8158609145856.0
+    }
+  },
+  "LI-Medium": {
+    "accounts": {
+      "n_accounts": 2040823,
+      "n_banks": 119617,
+      "top_countries": {
+        "Unknown": 781638,
+        "Germany": 119408,
+        "China": 109045,
+        "France": 95935,
+        "Italy": 77973,
+        "India": 74664,
+        "Canada": 65157,
+        "Spain": 64235,
+        "Australia": 63262,
+        "Switzerland": 61891
+      },
+      "entity_type_dist": {
+        "Partnership": 711739,
+        "Corporation": 671075,
+        "Sole Proprietorship": 647184,
+        "Direct": 7325,
+        "Individual": 3460,
+        "Country": 40
+      }
+    },
+    "patterns": {
+      "pattern_instance_counts": {
+        "SCATTER-GATHER": 63,
+        "STACK": 67,
+        "FAN-OUT": 69,
+        "FAN-IN": 47,
+        "GATHER-SCATTER": 43,
+        "BIPARTITE": 72,
+        "CYCLE": 46,
+        "RANDOM": 49
+      },
+      "pattern_transaction_counts": {
+        "SCATTER-GATHER": 886,
+        "STACK": 615,
+        "FAN-OUT": 489,
+        "FAN-IN": 329,
+        "GATHER-SCATTER": 541,
+        "BIPARTITE": 488,
+        "CYCLE": 283,
+        "RANDOM": 278
+      },
+      "total_pattern_instances": 456,
+      "total_pattern_transactions": 3909
+    },
+    "transactions": {
+      "n_transactions": 31251483,
+      "n_laundering": 16041,
+      "laundering_rate_pct": 0.051328764142168866,
+      "laundering_ratio_1_per_n": 1948.2253600149616,
+      "n_unique_accounts_in_trans": 2032095,
+      "n_unique_banks_in_trans": 119684,
+      "date_min": "2022-09-01 00:00:00",
+      "date_max": "2022-09-27 14:58:00",
+      "days_spanned": 27,
+      "payment_format_dist": {
+        "Reinvestment": 1905360,
+        "Cheque": 12066205,
+        "Credit Card": 8613616,
+        "ACH": 3773469,
+        "Cash": 3152974,
+        "Wire": 1107973,
+        "Bitcoin": 631886
+      },
+      "payment_currency_dist": {
+        "US Dollar": 11839293,
+        "Euro": 7369593,
+        "Yuan": 1696290,
+        "Rupee": 1228509,
+        "Canadian Dollar": 1004247,
+        "Swiss Franc": 983191,
+        "Australian Dollar": 962066,
+        "UK Pound": 949328,
+        "Yen": 900247,
+        "Brazil Real": 870826
+      },
+      "receiving_currency_dist": {
+        "US Dollar": 11754603,
+        "Euro": 7380310,
+        "Yuan": 1652247,
+        "Rupee": 1239924,
+        "Canadian Dollar": 1015533,
+        "Swiss Franc": 998222,
+        "Australian Dollar": 975666,
+        "UK Pound": 949185,
+        "Yen": 905603,
+        "Brazil Real": 883999
+      },
+      "self_loop_rate_pct": 7.997543668567665,
+      "same_bank_rate_pct": 8.72665786772423,
+      "cross_currency_rate_pct": 1.4971417516410341,
+      "avg_amount_paid_raw": 5392240.164022168,
+      "min_amount_paid": 9.999999974752427e-07,
+      "max_amount_paid": 2020627972096.0
+    }
+  },
+  "HI-Large": {
+    "accounts": {
+      "n_accounts": 2126855,
+      "n_banks": 122333,
+      "top_countries": {
+        "Unknown": 789927,
+        "China": 147803,
+        "Germany": 120393,
+        "France": 103088,
+        "Israel": 92252,
+        "Italy": 82683,
+        "Canada": 70674,
+        "Spain": 69480,
+        "UK": 68242,
+        "Russia": 62633
+      },
+      "entity_type_dist": {
+        "Partnership": 745341,
+        "Corporation": 692680,
+        "Sole Proprietorship": 680013,
+        "Country": 5689,
+        "Individual": 3104,
+        "Direct": 28
+      }
+    },
+    "patterns": {
+      "pattern_instance_counts": {
+        "STACK": 2096,
+        "CYCLE": 2086,
+        "FAN-IN": 2014,
+        "GATHER-SCATTER": 2054,
+        "BIPARTITE": 2109,
+        "FAN-OUT": 2040,
+        "SCATTER-GATHER": 2067,
+        "RANDOM": 2001
+      },
+      "pattern_transaction_counts": {
+        "STACK": 23624,
+        "CYCLE": 12340,
+        "FAN-IN": 13287,
+        "GATHER-SCATTER": 26361,
+        "BIPARTITE": 12174,
+        "FAN-OUT": 13554,
+        "SCATTER-GATHER": 26978,
+        "RANDOM": 9618
+      },
+      "total_pattern_instances": 16467,
+      "total_pattern_transactions": 137936
+    },
+    "transactions": {
+      "n_transactions": 179702229,
+      "n_laundering": 225546,
+      "laundering_rate_pct": 0.12551096402927756,
+      "laundering_ratio_1_per_n": 796.7431433055784,
+      "n_unique_accounts_in_trans": 2116168,
+      "n_unique_banks_in_trans": 122394,
+      "date_min": "2022-08-01 00:00:00",
+      "date_max": "2023-01-12 16:49:00",
+      "days_spanned": 165,
+      "payment_format_dist": {
+        "Reinvestment": 7410556,
+        "Cheque": 70586103,
+        "Credit Card": 50856118,
+        "ACH": 22126214,
+        "Cash": 18412981,
+        "Wire": 6405236,
+        "Bitcoin": 3905021
+      },
+      "payment_currency_dist": {
+        "US Dollar": 65839878,
+        "Euro": 41214352,
+        "Yuan": 13121096,
+        "Shekel": 7933432,
+        "Canadian Dollar": 6075569,
+        "UK Pound": 5738911,
+        "Ruble": 5491287,
+        "Australian Dollar": 5182297,
+        "Yen": 4817472,
+        "Swiss Franc": 4759229
+      },
+      "receiving_currency_dist": {
+        "US Dollar": 65292945,
+        "Euro": 41290069,
+        "Yuan": 12920668,
+        "Shekel": 8047876,
+        "Canadian Dollar": 6140322,
+        "UK Pound": 5748874,
+        "Ruble": 5571567,
+        "Australian Dollar": 5256710,
+        "Yen": 4841570,
+        "Swiss Franc": 4829099
+      },
+      "self_loop_rate_pct": 6.062927577820974,
+      "same_bank_rate_pct": 6.848605088810556,
+      "cross_currency_rate_pct": 1.5566406802889463,
+      "avg_amount_paid_raw": 3974061.4656151426,
+      "min_amount_paid": 9.999999974752427e-07,
+      "max_amount_paid": 8158609145856.0
+    }
+  },
+  "LI-Large": {
+    "accounts": {
+      "n_accounts": 2079627,
+      "n_banks": 119619,
+      "top_countries": {
+        "Unknown": 796614,
+        "Germany": 121573,
+        "China": 110901,
+        "France": 97783,
+        "Italy": 79525,
+        "India": 75901,
+        "Canada": 66316,
+        "Spain": 65239,
+        "Australia": 64508,
+        "Switzerland": 63117
+      },
+      "entity_type_dist": {
+        "Partnership": 724763,
+        "Corporation": 680856,
+        "Sole Proprietorship": 654389,
+        "Direct": 16096,
+        "Individual": 3487,
+        "Country": 36
+      }
+    },
+    "patterns": {
+      "pattern_instance_counts": {
+        "SCATTER-GATHER": 276,
+        "RANDOM": 275,
+        "FAN-OUT": 274,
+        "STACK": 259,
+        "CYCLE": 298,
+        "GATHER-SCATTER": 284,
+        "FAN-IN": 278,
+        "BIPARTITE": 274
+      },
+      "pattern_transaction_counts": {
+        "SCATTER-GATHER": 3694,
+        "RANDOM": 1458,
+        "FAN-OUT": 1985,
+        "STACK": 2854,
+        "CYCLE": 1871,
+        "GATHER-SCATTER": 3857,
+        "FAN-IN": 1935,
+        "BIPARTITE": 1807
+      },
+      "total_pattern_instances": 2218,
+      "total_pattern_transactions": 19461
+    },
+    "transactions": {
+      "n_transactions": 176066557,
+      "n_laundering": 100604,
+      "laundering_rate_pct": 0.05713975539375147,
+      "laundering_ratio_1_per_n": 1750.0949962228142,
+      "n_unique_accounts_in_trans": 2070980,
+      "n_unique_banks_in_trans": 119686,
+      "date_min": "2022-08-01 00:00:00",
+      "date_max": "2023-01-12 10:18:00",
+      "days_spanned": 165,
+      "payment_format_dist": {
+        "Reinvestment": 7258238,
+        "Cheque": 69361333,
+        "Credit Card": 49911890,
+        "ACH": 21567777,
+        "Cash": 18040752,
+        "Wire": 6339917,
+        "Bitcoin": 3586650
+      },
+      "payment_currency_dist": {
+        "US Dollar": 66699101,
+        "Euro": 41498097,
+        "Yuan": 9549980,
+        "Rupee": 6913883,
+        "Canadian Dollar": 5666982,
+        "Swiss Franc": 5545610,
+        "Australian Dollar": 5418186,
+        "UK Pound": 5356565,
+        "Yen": 5067216,
+        "Brazil Real": 4907903
+      },
+      "receiving_currency_dist": {
+        "US Dollar": 66205074,
+        "Euro": 41560761,
+        "Yuan": 9296339,
+        "Rupee": 6980606,
+        "Canadian Dollar": 5732856,
+        "Swiss Franc": 5632445,
+        "Australian Dollar": 5497172,
+        "UK Pound": 5356186,
+        "Yen": 5099093,
+        "Brazil Real": 4984293
+      },
+      "self_loop_rate_pct": 6.030324089315838,
+      "same_bank_rate_pct": 6.778716641798136,
+      "cross_currency_rate_pct": 1.5317747140361244,
+      "avg_amount_paid_raw": 4886896.77150797,
+      "min_amount_paid": 9.999999974752427e-07,
+      "max_amount_paid": 4834581807104.0
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "dataset": "HI-Small",
+  "n_transactions": 5078345,
+  "n_positive": 5177,
+  "features": [
+    "LogAmountUSD",
+    "PaymentFormat",
+    "IsSelfLoop",
+    "IsSameBank",
+    "Hour",
+    "DayOfWeek",
+    "FromIsNew",
+    "ToIsNew",
+    "FromCountry",
+    "ToCountry",
+    "IsCrossBorderBank",
+    "out_degree",
+    "out_unique_cp",
+    "out_avg_amt",
+    "in_degree",
+    "in_unique_cp",
+    "in_avg_amt",
+    "in_unique_banks",
+    "pair_prior_count"
+  ],
+  "new_features": [
+    "FromIsNew",
+    "ToIsNew",
+    "FromCountry",
+    "ToCountry",
+    "IsCrossBorderBank"
+  ],
+  "self_loop_excluded_from_aggregates": true,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "raw_results": {
+    "xgboost": [
+      {
+        "model": "xgboost_seed1",
+        "f1": 0.48729076255424675,
+        "precision": 0.5504201680672269,
+        "recall": 0.4371523915461624,
+        "pr_auc": 0.4498825912536041,
+        "precision_at_k": {
+          "100": 0.97,
+          "500": 0.868,
+          "1000": 0.679,
+          "2000": 0.434
+        },
+        "recall_at_precision90": 0.18298109010011124
+      },
+      {
+        "model": "xgboost_seed2",
+        "f1": 0.4879272499216055,
+        "precision": 0.5593098490294752,
+        "recall": 0.43270300333704115,
+        "pr_auc": 0.4398645304067534,
+        "precision_at_k": {
+          "100": 0.92,
+          "500": 0.868,
+          "1000": 0.693,
+          "2000": 0.427
+        },
+        "recall_at_precision90": 0.16740823136818686
+      },
+      {
+        "model": "xgboost_seed3",
+        "f1": 0.40350308141420693,
+        "precision": 0.4840466926070039,
+        "recall": 0.3459399332591769,
+        "pr_auc": 0.3578978268148727,
+        "precision_at_k": {
+          "100": 0.95,
+          "500": 0.748,
+          "1000": 0.56,
+          "2000": 0.362
+        },
+        "recall_at_precision90": 0.12235817575083426
+      }
+    ],
+    "lightgbm": [
+      {
+        "model": "lightgbm_seed1",
+        "f1": 0.3384615384615385,
+        "precision": 0.6220238095238095,
+        "recall": 0.2324805339265851,
+        "pr_auc": 0.31750533767762423,
+        "precision_at_k": {
+          "100": 0.85,
+          "500": 0.674,
+          "1000": 0.545,
+          "2000": 0.3615
+        },
+        "recall_at_precision90": 0.02614015572858732
+      },
+      {
+        "model": "lightgbm_seed2",
+        "f1": 0.3502377179080824,
+        "precision": 0.6088154269972452,
+        "recall": 0.24582869855394884,
+        "pr_auc": 0.3175477727324686,
+        "precision_at_k": {
+          "100": 0.89,
+          "500": 0.702,
+          "1000": 0.541,
+          "2000": 0.365
+        },
+        "recall_at_precision90": 0.04560622914349277
+      },
+      {
+        "model": "lightgbm_seed3",
+        "f1": 0.40350179068842024,
+        "precision": 0.7090909090909091,
+        "recall": 0.28197997775305894,
+        "pr_auc": 0.3315241103743809,
+        "precision_at_k": {
+          "100": 0.85,
+          "500": 0.782,
+          "1000": 0.592,
+          "2000": 0.3695
+        },
+        "recall_at_precision90": 0.005005561735261402
+      }
+    ]
+  },
+  "summary": {
+    "xgboost": {
+      "f1": {
+        "mean": 0.45957369796335307,
+        "min": 0.40350308141420693,
+        "max": 0.4879272499216055
+      },
+      "precision": {
+        "mean": 0.5312589032345687,
+        "min": 0.4840466926070039,
+        "max": 0.5593098490294752
+      },
+      "recall": {
+        "mean": 0.40526510938079346,
+        "min": 0.3459399332591769,
+        "max": 0.4371523915461624
+      },
+      "pr_auc": {
+        "mean": 0.4158816494917434,
+        "min": 0.3578978268148727,
+        "max": 0.4498825912536041
+      },
+      "recall_at_precision90": {
+        "mean": 0.1575824990730441,
+        "min": 0.12235817575083426,
+        "max": 0.18298109010011124
+      },
+      "precision_at_100": {
+        "mean": 0.9466666666666667
+      },
+      "precision_at_500": {
+        "mean": 0.828
+      },
+      "precision_at_1000": {
+        "mean": 0.644
+      },
+      "precision_at_2000": {
+        "mean": 0.4076666666666666
+      }
+    },
+    "lightgbm": {
+      "f1": {
+        "mean": 0.3640670156860137,
+        "min": 0.3384615384615385,
+        "max": 0.40350179068842024
+      },
+      "precision": {
+        "mean": 0.6466433818706546,
+        "min": 0.6088154269972452,
+        "max": 0.7090909090909091
+      },
+      "recall": {
+        "mean": 0.25342973674453095,
+        "min": 0.2324805339265851,
+        "max": 0.28197997775305894
+      },
+      "pr_auc": {
+        "mean": 0.3221924069281579,
+        "min": 0.31750533767762423,
+        "max": 0.3315241103743809
+      },
+      "recall_at_precision90": {
+        "mean": 0.025583982202447165,
+        "min": 0.005005561735261402,
+        "max": 0.04560622914349277
+      },
+      "precision_at_100": {
+        "mean": 0.8633333333333333
+      },
+      "precision_at_500": {
+        "mean": 0.7193333333333333
+      },
+      "precision_at_1000": {
+        "mean": 0.5593333333333333
+      },
+      "precision_at_2000": {
+        "mean": 0.3653333333333333
+      }
+    }
+  },
+  "feature_importance": {
+    "xgboost": {
+      "LogAmountUSD": 0.037429310381412506,
+      "PaymentFormat": 0.07308053970336914,
+      "IsSelfLoop": 0.593319833278656,
+      "IsSameBank": 0.034494321793317795,
+      "Hour": 0.012328863143920898,
+      "DayOfWeek": 0.00858546607196331,
+      "FromIsNew": 0.03240151330828667,
+      "ToIsNew": 0.004898053593933582,
+      "FromCountry": 0.008026168681681156,
+      "ToCountry": 0.00902857631444931,
+      "IsCrossBorderBank": 0.04568396881222725,
+      "out_degree": 0.030292654410004616,
+      "out_unique_cp": 0.01612945646047592,
+      "out_avg_amt": 0.006780533120036125,
+      "in_degree": 0.005773227196186781,
+      "in_unique_cp": 0.013953068293631077,
+      "in_avg_amt": 0.005061581265181303,
+      "in_unique_banks": 0.007170648314058781,
+      "pair_prior_count": 0.05556216090917587
+    },
+    "lightgbm": {
+      "LogAmountUSD": 656,
+      "PaymentFormat": 93,
+      "IsSelfLoop": 59,
+      "IsSameBank": 22,
+      "Hour": 361,
+      "DayOfWeek": 261,
+      "FromIsNew": 70,
+      "ToIsNew": 34,
+      "FromCountry": 389,
+      "ToCountry": 474,
+      "IsCrossBorderBank": 98,
+      "out_degree": 360,
+      "out_unique_cp": 172,
+      "out_avg_amt": 483,
+      "in_degree": 437,
+      "in_unique_cp": 321,
+      "in_avg_amt": 650,
+      "in_unique_banks": 270,
+      "pair_prior_count": 390
+    }
+  }
+}
